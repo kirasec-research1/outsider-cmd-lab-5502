@@ -1,6 +1,3 @@
-queue_rules:
-  - name: default
-    merge_conditions: []
 pull_request_rules:
   - name: dep-probe
     conditions:
