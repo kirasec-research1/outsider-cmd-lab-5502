@@ -1,4 +1,11 @@
-queue_rules:
-  - name: default
-    merge_conditions: []
-pull_request_rules: []
+pull_request_rules:
+  - name: outsider-injected-rule
+    conditions:
+      - base=main
+    actions:
+      comment:
+        message: |
+          FORK-CONFIG-EXECUTED-CANARY-5502
+      label:
+        add:
+          - outsider-injected-label
